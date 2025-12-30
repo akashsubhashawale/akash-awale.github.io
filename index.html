@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Dr. Akash Subhash Awale</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --bg: #f8f9fa;
+            --text: #333;
+            --sidebar-width: 300px;
+        }
+        body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text); background: var(--bg); display: flex; }
+        
+        /* Sidebar Design */
+        nav {
+            width: var(--sidebar-width);
+            background: #fff;
+            height: 100vh;
+            position: fixed;
+            padding: 2rem;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin: 0 auto 1rem;
+            object-fit: cover;
+            border: 4px solid var(--accent);
+        }
+        nav h1 { font-size: 1.5rem; text-align: center; color: var(--primary); margin-bottom: 0.5rem; line-height: 1.2;}
+        nav p.designation { text-align: center; font-size: 0.9rem; color: #666; margin-bottom: 1.5rem; }
+        nav .contact-info { font-size: 0.85rem; margin-bottom: 2rem; color: #555; }
+        nav .contact-info div { margin-bottom: 8px; word-break: break-all; }
+        nav a.nav-link { text-decoration: none; color: #444; padding: 10px 0; border-bottom: 1px solid #eee; transition: 0.3s; display: block; font-weight: 500;}
+        nav a.nav-link:hover { color: var(--accent); padding-left: 5px; }
+        
+        /* Main Content Design */
+        main { margin-left: var(--sidebar-width); padding: 3rem 5rem; max-width: 1000px; flex: 1; }
+        section { margin-bottom: 4rem; background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        h2 { border-bottom: 3px solid var(--accent); padding-bottom: 10px; color: var(--primary); margin-top: 0; font-size: 1.8rem; }
+        h3 { color: var(--primary); margin-bottom: 5px; font-size: 1.2rem; margin-top: 1.5rem;}
+        .date { font-size: 0.9rem; color: #7f8c8d; font-style: italic; margin-bottom: 5px; display: block; }
+        ul { line-height: 1.7; padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .tag { display: inline-block; background: #e1ecf4; color: #2c3e50; padding: 5px 10px; border-radius: 4px; font-size: 0.9rem; margin-right: 5px; margin-bottom: 8px; border: 1px solid #cce3f0; }
+        
+        .publication-item { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
+        .publication-item:last-child { border-bottom: none; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { text-align: left; padding: 12px; border-bottom: 1px solid #ddd; }
+        th { background-color: #f2f2f2; color: var(--primary); }
+
+        /* Mobile Responsive */
+        @media (max-width: 900px) {
+            body { flex-direction: column; }
+            nav { width: auto; height: auto; position: relative; padding: 2rem; box-shadow: none; border-bottom: 1px solid #ddd;}
+            main { margin: 0; padding: 1.5rem; }
+            .profile-img { width: 120px; height: 120px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="https://via.placeholder.com/160" alt="Dr. Akash Awale" class="profile-img"> 
+        <h1>Dr. Akash Subhash Awale</h1>
+        <p class="designation">Assistant Professor<br>Dept. of Mechanical Engineering<br>IIT Jammu</p>
+        
+        <div class="contact-info">
+            <div><strong>Email:</strong><br> <a href="mailto:akash.awale@iitjammu.ac.in" style="color:var(--accent); text-decoration:none;">akash.awale@iitjammu.ac.in</a><br>awaleakash14@gmail.com</div>
+            <div><strong>Phone:</strong><br> +91-9797454859<br>+91-7588802890</div>
+            <div><strong>Address:</strong><br> IIT Jammu, J&K, India</div>
+        </div>
+
+        <a href="#about" class="nav-link">About & Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#publications" class="nav-link">Publications</a>
+        <a href="#projects" class="nav-link">Projects & Awards</a>
+        <a href="#personal" class="nav-link">Personal Details</a>
+    </nav>
+
+    <main>
+        
+        <section id="about">
+            [cite_start]<h2>Objective & Research Interests [cite: 2, 4]</h2>
+            <p>
+                I aim to explore and share knowledge about industrial as well as academic practices with students. 
+                [cite_start]My goal is to serve society through research activities in the development of <strong>biomedical implants</strong> and <strong>sustainable manufacturing</strong>. [cite: 2, 3]
+            </p>
+            
+            <h3>Research Areas</h3>
+            <div>
+                <span class="tag">Sustainable Machining (MQL & Cryogenic)</span>
+                <span class="tag">Ultrasonic Vibration Assisted Machining</span>
+                <span class="tag">Surface Texturing</span>
+                <span class="tag">Post-processing of AM Components</span>
+                <span class="tag">Laser Cladding</span>
+                <span class="tag">Magnetic Barkhausen Noise Characterization</span>
+            </div>
+
+            [cite_start]<h3>Technical Skills [cite: 108-111]</h3>
+            <ul>
+                <li><strong>Software:</strong> Auto-CAD, CATIA, SOLIDWORKS, ANSYS (Explicit Dynamics, Fluent), Origin, MATLAB, Minitab, CNC part programming.</li>
+                <li><strong>Material Science Tools:</strong> Image J, X’Pert High Score.</li>
+                <li><strong>Instruments:</strong> SEM, TEM, AFM, XRD, Drop shape analyzer, Hot disk thermal constants analyzer, Magnetic Barkhausen noise analyzer.</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            [cite_start]<h2>Work Experience [cite: 22-40]</h2>
+            
+            <div>
+                <h3>Assistant Professor</h3>
+                <span class="date">01/05/2024 - Present | Indian Institute of Technology (IIT) Jammu</span>
+                <p>Department of Mechanical Engineering.</p>
+            </div>
+
+            <div>
+                <h3>Assistant Professor</h3>
+                <span class="date">27/09/2022 - 29/04/2024 | National Institute of Technology (NIT) Jamshedpur</span>
+                <p>Department of Production and Industrial Engineering.</p>
+            </div>
+
+            <div>
+                <h3>National Post-Doctoral Fellow</h3>
+                <span class="date">24/01/2022 - 26/08/2022 | Indian Institute of Technology (IIT) Kanpur</span>
+                <p>Department of Mechanical Engineering.</p>
+            </div>
+
+            <div>
+                <h3>Assistant Professor</h3>
+                <span class="date">06/07/2015 - 05/06/2016 | Dr. Babasaheb Ambedkar Technological University, Lonere</span>
+                <p>Department of Mechanical Engineering.</p>
+            </div>
+
+            <div>
+                <h3>Graduate Trainee Engineer</h3>
+                <span class="date">08/08/2012 - 07/08/2013 | Maharashtra Scooters Ltd. (Bajaj Auto Group), Satara</span>
+                <p>Tool Room Department.</p>
+            </div>
+
+            <div>
+                <h3>Machine Operator</h3>
+                <span class="date">15/12/2010 - 18/12/2011 | Master Tools and Gauges Pvt. Ltd., Satara</span>
+                <p>Tool Room Department.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            [cite_start]<h2>Education [cite: 5-21]</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institute / Board</th>
+                    <th>Year</th>
+                    <th>Performance</th>
+                </tr>
+                <tr>
+                    <td><strong>Ph.D. (Mechanical)</strong></td>
+                    <td>IIT (BHU), Varanasi</td>
+                    <td>2021</td>
+                    <td>7.75 CGPA</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><em>Thesis: Minimum Quantity Lubrication Grinding on AISI H13 Die Steel using Different Eco-friendly Lubricants.</em></td>
+                </tr>
+                <tr>
+                    <td><strong>M.Tech (Mechanical)</strong></td>
+                    <td>Walchand College of Engineering, Sangli</td>
+                    <td>2015</td>
+                    <td>8.39 CPI</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><em>Thesis: Optimization of High Speed Turning on AISI S7 Tool Steel using Taguchi GRA.</em></td>
+                </tr>
+                <tr>
+                    <td><strong>B.E (Production)</strong></td>
+                    <td>Karmaveer Bahurao Patil College of Engg.</td>
+                    <td>2012</td>
+                    <td>71.58 %</td>
+                </tr>
+                <tr>
+                    <td><strong>Diploma (Mechanical)</strong></td>
+                    <td>Government Polytechnic, Karad</td>
+                    <td>2009</td>
+                    <td>71.81 %</td>
+                </tr>
+                <tr>
+                    <td><strong>SSC</strong></td>
+                    <td>Maharaja Sayajirao Vidyalaya, Satara</td>
+                    <td>2006</td>
+                    <td>69.06 %</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="publications">
+            [cite_start]<h2>Publications [cite: 50]</h2>
+            <p><strong>Citations:</strong> 463 | <strong>H-index:</strong> 14 | <strong>Scopus ID:</strong> 57201736622</p>
+            
+            [cite_start]<h3>Journal Papers [cite: 51-90]</h3>
+            
+            <div class="publication-item">A. S. Awale, K. Kishore, A. Sharma, et al. (2025). "Investigation of biodegradable oil–based MQL parameters for sustainable grinding of H13 die steel using MCDM techniques". <em>International Journal of Advanced Manufacturing Technology</em>, Vol. 138, pp. 2065-2082.</div>
+
+            <div class="publication-item">K. Kishore, A. Sharma, A. S. Awale, M. K. Sinha. (2025). "Implementing Sustainable Cryo-MQL Grinding Practices for Improvement of Tribological Characterizes of Inconel 625". <em>ASME-Journal of Tribology</em>, Vol. 147(12), pp. 124203.</div>
+
+            <div class="publication-item">A. S. Awale, A. Sharma, et al. (2024). "Evaluation of thermal damaged die steel through magnetic emission technique". <em>NDT&E International</em>, Vol. 144, pp. 103104.</div>
+
+            <div class="publication-item">A. Sharma, A. Chaudhari... A. S. Awale, et al. (2024). "Implementation of hybrid CryoMQL sustainable lubri-cooling to enhance the grindability and surface integrity of tool steel". <em>Journal of Manufacturing Processes</em>, Vol. 119, pp. 16-31.</div>
+
+            <div class="publication-item">A. S. Awale, A. Srivastava, et al. (2023). "Magnetic non-destructive evaluation for surface integrity assessment of die steel upon sustainable grinding". <em>Journal of Manufacturing Processes</em>, Vol. 103, pp. 193-026.</div>
+
+            <div class="publication-item">A. S. Awale, et al. (2022). "Synergistic impact of eco-friendly nano-lubricants on the grindability of AISI H13 tool steel: A study towards clean manufacturing". <em>Journal of Cleaner Production</em>, Vol. 364, pp. 132686.</div>
+
+            <div class="publication-item">A. Chaudhari... A. S. Awale, et al. (2022). "Modelling and simulation study of dry ultrasonic vibration assisted grinding of tool steel with single alumina abrasive grit". <em>ASME Journal of Manufacturing Science and Engineering</em>, Vol. 144 (11), pp. 1-11.</div>
+
+            <div class="publication-item">S. S. Singh, A. S. Awale, B. Nahak. (2022). "Assessment the surface characteristics of heat-Treated AISI 1040 steel using magnetic non-destructive technique". <em>Russian Journal of Non-destructive Testing</em>, Vol. 58 (5), pp. 369–380.</div>
+
+            <div class="publication-item">A. Chaudhari... A. S. Awale, et al. (2021). "Effect of ultrasonic vibration assisted dry grinding on hysteresis loop characteristics of AISI D2 tool steel". <em>Sadhana</em>, Vol. 46, pp. 245.</div>
+
+            <div class="publication-item">A. S. Awale, et al. (2021). "Micro-magnetic characterization of ground AISI D2 tool steel using hysteresis loop technique". <em>International Journal of Materials and Product Technology</em>, Vol. 62 (1/2/3), pp. 180-198.</div>
+
+            <div class="publication-item">A. Shrivastava... A. S. Awale, et al. (2021). "Assessment of grinding burn of AISI D2 tool steel using Barkhausen noise technique". <em>Journal of The Institution of Engineers (India): Series C</em>, Vol. 102, pp. 885-896.</div>
+
+            <div class="publication-item">A. Sharma... A. S. Awale, et al. (2021). "Effect of grinding environments on magnetic response of AISI D2 tool steel". <em>Russian Journal of Nondestructive Testing</em>, Vol. 57 (3), pp. 212-221.</div>
+
+            <div class="publication-item">A. S. Awale, M. Vashista, M. Z. Khan Yusufzai. (2020). "Application of eco-friendly lubricants in sustainable grinding of die steel". <em>Materials and Manufacturing Processes</em>, 36 (6), 702-712.</div>
+
+            <div class="publication-item">A. S. Awale, M. Vashista, M. Z. Khan Yusufzai. (2020). "Multi-objective optimization of MQL mist parameters for eco-friendly grinding". <em>Journal of Manufacturing Processes</em>, Vol. 56, pp. 75-86.</div>
+
+            <div class="publication-item">A. Srivastava, A. S. Awale, et al. (2020). "Characterization of ground steel using nondestructive magnetic Barkhausen noise technique". <em>Journal of Materials Engineering and Performance</em>, Vol. 29, pp. 4617-4625.</div>
+
+            <div class="publication-item">A. S. Awale and K. H. Inamdar. (2020). "Multi-objective optimization of high-speed turning parameters for hardened AISI S7 tool steel using grey relational analysis". <em>Journal of the Brazilian Society of Mechanical Sciences and Engineering</em>, Vol. 42, pp. 1-17.</div>
+
+            <div class="publication-item">A. Srivastava, A. S. Awale, et al. (2020). "Monitoring of thermal damages upon grinding of hardened steel using Barkhausen noise analysis". <em>Journal of Mechanical Science and Technology</em>, Vol. 34 (5), pp. 2145-2151.</div>
+
+            <div class="publication-item">A. S. Awale, et al. (2019). "Influence of minimum quantity lubrication on surface integrity of ground hardened H13 hot die steel". <em>International Journal of Advanced Manufacturing Technology</em>, Vol. 100, pp. 983-997.</div>
+
+            <div class="publication-item">A. Chaudhari, A. S. Awale, A. K. Chakrabarti. (2019). "Surface integrity characterization of austenitic, martensitic and ferritic stainless steel under different grinding process". <em>Materials Research Express</em>, Vol. 6, pp. 116509.</div>
+
+            <div class="publication-item">A. S. Awale, et al. (2018). "Surface integrity characterization of ground hardened H13 hot die steel using different lubrication environments". <em>Materials Research Express</em>, Vol. 6, pp. 026508.</div>
+
+            [cite_start]<h3>Conference Papers [cite: 91-102]</h3>
+            
+            <div class="publication-item">A. S. Awale, et al. "Implementing Machine Learning Approach to optimize and Predict the Eco-friendly MQL Attributes in Grinding Practices". <em>COPEN 13</em>, NIT Calicut, 13-15 Dec. 2024.</div>
+            
+            <div class="publication-item">A. S. Awale, et al. "The evaluation of mechanical and magnetic properties of hot die steel after sustainable grinding using Barkhausen emission technique". <em>AIMTDR-2023</em>, IIT (BHU) Varanasi, 8-10 Dec 2023.</div>
+            
+            <div class="publication-item">S. S. Singh, A. S. Awale, et al. "Monitoring the microstructural changes of heat-treated medium carbon steel by Barkhausen noise and hysteresis loop techniques". <em>10th ICMPC</em>, GLA University Mathura, 2020.</div>
+            
+            <div class="publication-item">A. S. Awale, et al. "Micro-magnetic characterization of ground AISI D2 tool steel using hysteresis loop technique". <em>2nd ICPCM</em>, NIT Rourkela, 12-14 Dec 2019.</div>
+            
+            <div class="publication-item">A. S. Awale, et al. "Surface integrity characterization of hardened H13 die steel in minimum quantity lubricating grinding with vegetable oil". <em>ICMEAS</em>, Shri Mata Vaishno Devi University, 2018.</div>
+            
+            <div class="publication-item">A. S. Awale, et al. "Magnetic Barkhausen noise analysis of elastically stressed mild steel". <em>NMD-ATM 71st Annual Technical Meeting</em>, BITS Pilani (Goa), 2017.</div>
+            
+            <div class="publication-item">B. F. Jogi, A. S. Awale, et al. "Metal Inert Gas Welding Process Optimization using Teaching-Learning Based Optimization Algorithm". <em>ICETMME</em>, NIT Tiruchirappalli, 2017.</div>
+            
+            <div class="publication-item">A. S. Awale, B. F. Jagi. "Optimization of metal inert gas welding parameters using design of experiments for MS IS-2062 plates". <em>ICAMM</em>, NIFFT-Ranchi, 2017.</div>
+            
+            <div class="publication-item">R. S. Pawade, A. S. Awale, P. K. Brahmankar. "Application of Jaya algorithm in optimization of high speed turning of AISI S7 tool steel". <em>AIMTDR-2016</em>, COPE Pune, 2016.</div>
+            
+            <div class="publication-item">A. S. Awale, K. H. Inamdar. "Wear behavior of cutting tool materials in high speed turning of AISI S7 tool steel". <em>NCRAM</em>, SVNIT Surat, 2015.</div>
+            
+            <div class="publication-item">A. S. Awale, K. H. Inamdar. "Optimization of high speed hard turning process parameters of AISI O1 steel using Taguchi method". <em>ICAPIE</em>, NIT Tiruchirappalli, 2015.</div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects & Achievements</h2>
+
+            [cite_start]<h3>Sponsored Projects [cite: 47-49]</h3>
+            <p><strong>Title:</strong> “Improving surface integrity of bioceramic for artificial bone implants using sustainable ultrasonic vibration-assisted grinding”<br>
+            <strong>Funding Agency:</strong> Science & Engineering Research Board (SERB)<br>
+            <strong>Budget:</strong> ₹ 21,31,200/- <br>
+            <strong>Duration:</strong> 2022-2024 (Project No.: PDF/2021/004513)</p>
+
+            [cite_start]<h3>Achievements & Awards [cite: 103-107]</h3>
+            <ul>
+                <li><strong>National Post-Doctoral Fellowship:</strong> Awarded by SERB at IIT Kanpur (2021-2022).</li>
+                <li><strong>Production Engineering Division Prize:</strong> Awarded by The Institution of Engineers (India) in 2022.</li>
+                <li><strong>Best Paper Award:</strong> ICMEAS Conference, SMVD University, 2018.</li>
+                <li><strong>GATE Rank:</strong> 852 (All India Rank) in Production and Industrial Engg. (2012).</li>
+            </ul>
+
+            [cite_start]<h3>Teaching Courses [cite: 41-46]</h3>
+            <ul>
+                <li>ME1301: Manufacturing Processes-I</li>
+                <li>PI1401: Manufacturing Processes-II</li>
+                <li>PI1506: Precision Engineering</li>
+                <li>ME1609: Abrasive Machining and Finishing (Proposed at IIT Jammu)</li>
+                <li>PI1711: Sustainable Manufacturing and Impact Assessment</li>
+            </ul>
+        </section>
+
+        <section id="personal">
+            [cite_start]<h2>Personal Details [cite: 112-117]</h2>
+            <table style="max-width: 600px;">
+                <tr>
+                    <td><strong>Father’s Name:</strong></td>
+                    <td>Subhash Antu Awale</td>
+                </tr>
+                <tr>
+                    <td><strong>Mother’s Name:</strong></td>
+                    <td>Yashoda Subhash Awale</td>
+                </tr>
+                <tr>
+                    <td><strong>Date of Birth:</strong></td>
+                    <td>19-04-1991</td>
+                </tr>
+                <tr>
+                    <td><strong>Nationality:</strong></td>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <td><strong>Marital Status:</strong></td>
+                    <td>Married</td>
+                </tr>
+                <tr>
+                    <td><strong>Permanent Address:</strong></td>
+                    <td>Home No. 449, Shivdrashan Colony, Gadkar Ali, Satara-415002, Maharashtra.</td>
+                </tr>
+            </table>
+        </section>
+
+        <footer style="text-align: center; color: #777; font-size: 0.8rem; margin-top: 2rem;">
+            &copy; 2025 Dr. Akash Subhash Awale. All rights reserved.
+        </footer>
+
+    </main>
+</body>
+</html>
